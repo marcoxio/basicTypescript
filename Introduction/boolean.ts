@@ -16,7 +16,7 @@ console.log("this boolean is", nameEquals)
 
 var bothAreTrue:boolean = nameEquals && acceptDiscount;
 
-console.log("El resultado de dos booleanos",nameEquals)
+console.log("result that boolean is :",nameEquals)
 
 
 var listNumber1:number = 100;
