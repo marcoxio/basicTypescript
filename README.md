@@ -24,3 +24,10 @@
 
 
 # Section 2 Conditionals
+* if
+* else
+* else/if
+* Switch/Comments/Enum
+
+# How to Debugger
+* debugger in section for evaluate
