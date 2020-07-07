@@ -42,3 +42,9 @@
 * Simple
 * With Parameter
 * Return Function
+
+# Section 4 Arrays
+* Push
+* Slice
+* Find
+* AnonymusFunction
