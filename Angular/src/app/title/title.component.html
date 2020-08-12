@@ -1,14 +1,45 @@
-<h1>hola soy {{ name }} {{ lastName }}</h1>
-<h2>hola yo soy el  alumno {{ alumn.name }} {{ alumn.lastName }}</h2>
+<h1>Interpolation</h1>
+<hr>
+<p>hola soy {{ name }} {{ lastName }}</p>
+<p>hola yo soy el  alumno {{ alumn.name }} {{ alumn.lastName }}</p>
 
+
+<h1>Property Binding</h1>
+<hr>
 <!-- proterty binding -->
 <img [src]="imagen" alt="">
 
+
+<h1>Two way Binding</h1>
+<hr>
 <input type="text" [(ngModel)]="inputNew">
 <p>{{inputNew}}</p>
 
-<label for="">Email</label>
-<input type="text" [(ngModel)]="email">
-<label for="">Password</label>
-<input type="password" [(ngModel)]="password">
-<button (click)="send()">Submit</button>
+
+<label for="">Email
+    <input type="text" [(ngModel)]="email">
+</label>
+<label for="">Password
+<!-- <input type="password" (ngModelChange)="changePassword()" (keydown)="send($event)" [(ngModel)]="password"> -->
+    <input type="password" (keydown)="send($event)" [(ngModel)]="password">
+</label>
+
+<!-- <button (dblclick)="send()">Submit</button> -->
+
+<h1>Events</h1>
+<h2>Double Click</h2>
+<hr>
+<button (dblclick)="callAlert()">Double Click</button>
+
+
+<h2>Input</h2>
+<hr>
+<input type="text" (input)="write($event.target.value)">
+
+<h2>Focus</h2>
+<hr>
+<input type="text" (focus)="FillBackground($event)">
+
+<h2>Mouse Enter - Mouse Leave</h2>
+<hr>
+<img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.2-hp.gif" (mouseenter)="changeSize($event)" (mouseleave)="incrementSize($event)" alt="">
