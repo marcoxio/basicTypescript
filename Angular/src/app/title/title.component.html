@@ -1,0 +1,14 @@
+<h1>hola soy {{ name }} {{ lastName }}</h1>
+<h2>hola yo soy el  alumno {{ alumn.name }} {{ alumn.lastName }}</h2>
+
+<!-- proterty binding -->
+<img [src]="imagen" alt="">
+
+<input type="text" [(ngModel)]="inputNew">
+<p>{{inputNew}}</p>
+
+<label for="">Email</label>
+<input type="text" [(ngModel)]="email">
+<label for="">Password</label>
+<input type="password" [(ngModel)]="password">
+<button (click)="send()">Submit</button>
