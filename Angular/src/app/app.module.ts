@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { FormsModule } from '@angular/forms';
+import { DirectiveComponent } from './directive/directive.component';
+import { BootstrapComponent } from './bootstrap/bootstrap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleComponent
+    TitleComponent,
+    DirectiveComponent,
+    BootstrapComponent
   ],
   imports: [
     BrowserModule,

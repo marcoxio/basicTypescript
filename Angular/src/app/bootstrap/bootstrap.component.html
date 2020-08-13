@@ -1,0 +1,34 @@
+<h2>Bootstrap</h2>
+<hr>
+<div class="container">
+    <form action="">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" [(ngModel)]="alumn.name">
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName">lastName</label>
+            <input type="text" name="lastName" class="form-control" [(ngModel)]="alumn.lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="excellence">Is Excellent</label>
+            <select name="excellence" [(ngModel)]="alumn.excellence">
+                <option value="false">NO</option>
+                <option value="true">YES</option>
+            </select>
+        </div>
+        
+        <button class="btn btn-primary" (click)="Add()">Add</button>
+    </form>
+
+    <br>
+
+    <div class="card" *ngFor="let alumns of listAlumns">
+        <div class="card-body">
+            <span [ngClass]="{'excellence' : alumns.excellence}">alumn:</span>  {{ alumns.name }} {{ alumns.lastName }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<h2>Directive *ngIf</h2>
+<hr>
+<div *ngIf="!loading">
+    <p>Hello, finish loading, thanks</p>
+</div>
+<img *ngIf="loading" src="https://stec.es/stec/templates/stec_1//imagenes/comunes/image-loader.gif" alt="">
+
+<button (click)="showLoading()">Show Loading...</button>
+
+
+<h2>Directive *ngFor</h2>
+<hr>
+<div *ngFor="let name of names">
+    <p>Hello my name is : {{ name }}</p>
+</div>
+
+<div *ngFor="let product of products" class="product">
+    <p>product :{{ product.name }}</p>
+    <p>stock : {{ product.stock }}</p>
+    <p>maker : {{ product.maker }}</p>
+    <p>closure : {{ product.closure }}</p>
+</div>
+
+
+<h2>Directive *ngSwitch</h2>
+<hr>
+<div class="tabs" [ngSwitch]="tab">
+    <button (click)="changeTab('profile')">Profile</button>
+    <button (click)="changeTab('points')">Points</button>
+    <button (click)="changeTab('info')">Info</button>
+
+
+    <div class="tabContent">
+        <p *ngSwitchCase="'profile'">This is a profile</p>
+        <p *ngSwitchCase="'points'">This is a point</p>
+        <p *ngSwitchCase="'info'">This is a info</p>
+        <p *ngSwitchDefault>Select  tab</p>
+    </div>
+</div>
+
+<h2>Directive *ngClass</h2>
+<hr>
+<button (click)="showSquare()">Change</button>
+<div [ngClass]="{'square': isSquare}">
+    <p>This is a background green</p>
+</div>
+

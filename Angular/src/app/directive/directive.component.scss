@@ -1,0 +1,26 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.product{
+    border: 2px solid #afaeae;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.tabs{
+    border: 1px solid #696969;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.tabContent{
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    background: #696969;
+}
+
+.square{
+    background: greenyellow;
+    width: 200px;
+    height: 200px;
+}
