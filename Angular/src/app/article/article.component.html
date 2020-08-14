@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="articles" *ngFor="let article of articles">
+        <h4> Name: <a (click)="nextParameter(article)"> {{ article.name }}</a></h4>
+        <p>Description: {{ article.description }}</p>
+        <h5>Price: {{ article.price | currency: 'Lps. '}}</h5>
+    </div>
+</div>

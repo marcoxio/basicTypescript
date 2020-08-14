@@ -47,6 +47,9 @@ Manipuling elements DOM
 
 [routerLinkActiveOptions]="{exact : true}"
 
+* Children
+
+
 # Reactive Forms
 
 # Services
